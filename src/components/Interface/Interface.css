@@ -1,0 +1,191 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#root {
+    height: 100vh;
+    background-color: #1A1A1D;
+}
+
+.adOuterContainer {
+    float: left;
+    width: 20%;
+    height: 100vh;
+    padding: 5px;
+}
+.adInnerContainer {
+    border: 1px solid red;
+    height: 100%;
+}
+
+.tableOuterContainer {
+    float: left;
+    width: 80%;
+    height: 60vh;
+    padding: 5px;
+}
+.tableInnerContainer {
+    /* border: 1px solid red; */
+    height: 100%;
+}
+
+.panelOuterContainer {
+    float: left;
+    width: 80%;
+    height: 40vh;
+    padding: 5px;
+}
+.panelInnerContainer {
+    /* border: 1px solid red; */
+    height: 100%;
+    position: relative;
+    background-color: #03051e;
+}
+
+.clearfix{
+    overflow: hidden;
+}
+
+.topright {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    margin: 0;
+}
+
+.topleft {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    margin: 0;
+}
+
+.subpanelContainer {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    background-color: #0f4c75;
+    height: 80%;
+}
+ul {
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+}
+ul li {
+    font-size: 15px;
+    flex: 1 0 25%;
+}
+/* .topleft-1 {
+    position: absolute;
+    top: -20px;
+    left: 2px;
+    font-size: 18px;
+    margin: 0;
+}
+.topright-1 {
+    position: absolute;
+    top: -20px;
+    right: 2px;
+    font-size: 18px;
+    margin: 0;
+} */
+
+.user {
+    float: left;
+    width: 11.11%;
+    height: 33.33%;
+    margin: 0;
+    border: 1px solid #46b5d1;
+    border-radius: 30%;
+
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.innerUserContainer * {
+    margin: 0;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.player {
+    float: left;
+    width: 55.55%;
+    height: 33.33%;
+    margin: 0;
+    /* border: 1px solid #46b5d1; */
+    font-size: 31px;
+
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.player p {
+    margin: 0;
+    line-height: 0.6;
+}
+
+.currentBid {
+    float: left;
+    width: 22.22%;
+    height: 33.33%;
+    margin: 0;
+    border-left: 1px solid #46b5d1; 
+
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.currentBidInnerContainer * {
+    line-height: 0.6;
+    text-align: center;
+}
+
+.infoText {
+    color: #fd7014;
+}
+.userText {
+    color: #17b794;
+}
+.userText1 {
+    color: #c327ab;
+}
+.infoText1 {
+    color: #bbe1fa;
+}
+
+.smText {
+    font-size: 12px;
+}
+.mdText {
+    font-size: 18px;
+}
+
+
+/* @media screen and (min-width: 320px) and (max-width: 653px) and (orientation: portrait) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    height: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+} */
