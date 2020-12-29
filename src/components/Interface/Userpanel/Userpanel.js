@@ -2,12 +2,11 @@ import { useEffect, useState } from "react";
 
 const Userpanel = ({ user, setBid, bid, bidder, setBidder, player, setUser }) => {
     let [counter, setCounter] = useState(15);
-    let [bidchange, setBidChange] = useState(bidder);
 
     useEffect(() => {
         let timeout;
-        if(player && user.name !== bidder) {
-            if(bidchange === bidder) {
+        if(player && user.status === true) {
+            if(user.name !== bidder) {
                 timeout = setTimeout(() => {
                     timeout = setCounter(counter -1)
                 }, 1000);
@@ -18,20 +17,19 @@ const Userpanel = ({ user, setBid, bid, bidder, setBidder, player, setUser }) =>
             }
             else {
                 setCounter(15);
-                setBidChange(bidder);
             }
         }
         else {
             setCounter(15);
         }
         return () => clearTimeout(timeout);
-    }, [bidder, bidchange, counter, player, setUser, user]);
+    }, [bidder, counter, player, setUser, user]);
 
     return (
         <div className="panelOuterContainer">
             <div className="panelInnerContainer">
                 {user ? 
-                    (<p className="topleft mdText userText1">{user.name}      <span className="userText">{counter}</span></p>)
+                    (<p className="topleft mdText userText1">{user.name} <span className="userText">{counter}</span></p>)
                     : null
                 }
                 {user ? 
