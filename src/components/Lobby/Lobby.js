@@ -19,7 +19,7 @@ const Lobby = ({ location }) => {
     let [bid, setBid] = useState(0);
     let [bidder, setBidder] = useState('');
     
-    const ENDPOINT = '137.116.209.167:3000';
+    const ENDPOINT = 'https://server.simpleauctions.tk/';
 
     const history = useHistory();
     const [shouldRedirect, setRedirect] = useState(false);
