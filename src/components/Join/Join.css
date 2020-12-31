@@ -2,15 +2,16 @@ html, body {
     font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
+    background-color: #1A1A1D
 }
 
-p {
+.error {
   color: red;
 }
   
 #root {
   height: 100vh;
-  background-color: #1A1A1D;
+  overflow-x: hidden;
 }
 
 * {
@@ -27,7 +28,7 @@ p {
 }
 
 .joinInnerContainer {
-  width: 50%;
+  width: 90%;
 }
 
 .joinInput {
@@ -38,7 +39,7 @@ p {
 
 .heading {
   color: white;
-  font-size: 2.5em;
+  /* font-size: 2.5em; */
   padding-bottom: 10px;
   border-bottom: 2px solid white;
 }
@@ -55,9 +56,9 @@ p {
     width: 100%;
 }
 
-.mt-20 {
-  margin-top: 20px;
-}
+/* .mt-20 {
+  margin-top: 5px;
+} */
 
 @media (min-width: 320px) and (max-width: 480px) {
   .joinOuterContainer {
@@ -67,10 +68,13 @@ p {
   .joinInnerContainer {
     width: 90%;
   }
-
-
 }
 
 button:focus {
   outline: 0;
+}
+
+label {
+  color: #46b5d1;
+  font-size: 0.8em;
 }
