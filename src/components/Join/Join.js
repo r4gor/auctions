@@ -13,7 +13,7 @@ const Join = ({ location }) => {
         error = location.state.error;
 
     return (
-        <div className="row">
+        <div className="row vh-100">
             <div className="col-3 d-flex flex-column align-items-center justify-content-center">
                 <div className="card shadow bg-dark">
                     <div className="card-header">
@@ -25,9 +25,6 @@ const Join = ({ location }) => {
                             virtual auctions with virtual points in a simple and innovative way.
                         </p>
                         <br/>
-                        <p className="text-light m-0">
-                            Built with 💙 by <a className="text-decoration-none text-info" href="https://raulcodes.tk/" target="_blank" rel="noreferrer">Raul</a>
-                        </p>
                     </div>
                 </div>
                 <div className="card shadow bg-dark mt-2">
@@ -80,6 +77,9 @@ const Join = ({ location }) => {
                         <p className="error m-0">{error}</p>
                     ) : null}
                 </div>
+                <p className="text-light m-0 pt-5">
+                    Built with 💙 by <a className="text-decoration-none text-info" href="https://raulcodes.tk/" target="_blank" rel="noreferrer">Raul</a>
+                </p>
             </div>
             <div className="col-3 d-flex flex-column align-items-center justify-content-center">
                 <div className="card shadow bg-dark">
