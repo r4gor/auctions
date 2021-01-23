@@ -104,22 +104,11 @@ const Lobby = ({ location }) => {
         <div className="clearfix">
             <div className="adOuterContainer">
                 <div className="adInnerContainer">
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <ins className="adsbygoogle"
-                    style={{display:'block'}}
-                    data-ad-client="ca-pub-4076825572689350"
-                    data-ad-slot="2384006055"
-                    data-ad-format="auto"
-                    data-full-width-responsive="true"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
+                    
                 </div>
-                <div className="d-flex justify-content-center">
-                    <p className="text-light m-0">
-                        Built with 💙 by <a className="text-decoration-none text-info" href="https://raulcodes.tk/" target="_blank" rel="noreferrer">Raul</a>
-                    </p>
-                </div>
+                <footer className="text-light m-0 footer">
+                    Built with 💙 by <a className="text-decoration-none text-info" href="https://raulcodes.tk/" target="_blank" rel="noreferrer">Raul</a>
+                </footer>
             </div>
             <Interface 
                 users = { users }

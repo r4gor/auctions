@@ -29,11 +29,11 @@ const Userpanel = ({ user, setBid, bid, bidder, setBidder, player, setUser }) =>
         <div className="panelOuterContainer">
             <div className="panelInnerContainer">
                 {user ? 
-                    (<p className="topleft mdText userText1">{user.name} <span className="userText">{counter}</span></p>)
+                    (<p className="topleft mdText infoText1">{user.name} <span className="userText">{counter}</span></p>)
                     : null
                 }
                 {user ? 
-                    (<p className="topright mdText userText1">Points: {user.current_points}</p>)
+                    (<p className="topright mdText userText1"><span className="infoText">Points:</span> {user.current_points}</p>)
                     : null
                 }
                 <div className="container">
@@ -78,10 +78,10 @@ const Userpanel = ({ user, setBid, bid, bidder, setBidder, player, setUser }) =>
                     }
                 </div>
                 <div className="subpanelContainer">
-                    <p className="topleft smText infoText1">Won bids:</p>
-                    <ul className="userText smText">
+                    <p className="topleft smText infoText">Won bids:</p>
+                    <ul className="smText">
                         {user && (typeof user.players !== 'undefined') ? user.players.map((p) => (
-                            <li key={p}>{p}</li>
+                            <li key={p} className="userText">{p}</li>
                         )) : null}
                     </ul>
                 </div>

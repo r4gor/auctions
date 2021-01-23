@@ -28,7 +28,7 @@ html, body {
 }
 
 .joinInnerContainer {
-  width: 90%;
+  width: 100%;
 }
 
 .joinInput {
@@ -56,17 +56,13 @@ html, body {
     width: 100%;
 }
 
-/* .mt-20 {
-  margin-top: 5px;
-} */
-
 @media (min-width: 320px) and (max-width: 480px) {
   .joinOuterContainer {
     height: 100%;
   }
 
   .joinInnerContainer {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -77,4 +73,13 @@ button:focus {
 label {
   color: #46b5d1;
   font-size: 0.8em;
+}
+
+.join-space {
+  min-height: calc(100% - 20px);
+}
+
+.footer-join {
+  height: 20px;
+  text-align: center;
 }

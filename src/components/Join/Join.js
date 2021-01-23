@@ -13,8 +13,9 @@ const Join = ({ location }) => {
         error = location.state.error;
 
     return (
-        <div className="row vh-100">
-            <div className="col-3 d-flex flex-column align-items-center justify-content-center">
+        <>
+        <div className="row join-space">
+            <div className="col-4 d-flex flex-column align-items-center justify-content-center">
                 <div className="card shadow bg-dark">
                     <div className="card-header">
                         <h6 className="m-0 font-weight-bold text-info">What is Simple Auctions?</h6>
@@ -32,20 +33,11 @@ const Join = ({ location }) => {
                         <h6 className="m-0 font-weight-bold text-info">Ad</h6>
                     </div>
                     <div className="card-body">
-                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                            <ins className="adsbygoogle"
-                                style={{display: 'block'}}
-                                data-ad-client="ca-pub-4076825572689350"
-                                data-ad-slot="7855523265"
-                                data-ad-format="auto"
-                                data-full-width-responsive="true"></ins>
-                            <script>
-                                (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
+                        
                     </div>
                 </div>
             </div>
-            <div className="joinOuterContainer col-6 flex-column">
+            <div className="joinOuterContainer col-4 flex-column">
                 <h1 className="text-primary m-0">Simple Auctions</h1>
                 <div className="joinInnerContainer">
                     <h4 className="heading">Create/Join</h4>
@@ -77,11 +69,8 @@ const Join = ({ location }) => {
                         <p className="error m-0">{error}</p>
                     ) : null}
                 </div>
-                <p className="text-light m-0 pt-5">
-                    Built with 💙 by <a className="text-decoration-none text-info" href="https://raulcodes.tk/" target="_blank" rel="noreferrer">Raul</a>
-                </p>
             </div>
-            <div className="col-3 d-flex flex-column align-items-center justify-content-center">
+            <div className="col-4 d-flex flex-column align-items-center justify-content-center">
                 <div className="card shadow bg-dark">
                     <div className="card-header">
                         <h6 className="m-0 font-weight-bold text-info">How to use Simple Auctions?</h6>
@@ -105,6 +94,10 @@ const Join = ({ location }) => {
                 </div>
             </div>
         </div>
+        <footer className="text-light m-0 footer-join">
+            Built with 💙 by <a className="text-decoration-none text-info" href="https://raulcodes.tk/" target="_blank" rel="noreferrer">Raul</a>
+        </footer>
+        </>
     )
 }
 
