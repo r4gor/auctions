@@ -83,3 +83,12 @@ label {
   height: 20px;
   text-align: center;
 }
+
+
+.ad-wrapper{
+  max-height: 50vh;
+}
+.ad-size {
+  overflow: hidden;
+  max-height: 100%;
+}
