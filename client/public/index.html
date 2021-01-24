@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta
+      name="description"
+      content="Auctions"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo180.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+      @media only screen and (orientation:portrait){
+        #root { display:none; }
+        .warning-message { 
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      @media only screen and (orientation:landscape){
+        .warning-message { display:none; }
+      }
+    </style>
+    <title>Simple Auctions</title>
+
+    <!-- ADCash -->
+    <meta name="a.validate.01" content="91d3f844af944af7bbddc4e9a4e3e0b80706" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y9RZ4V411R"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-Y9RZ4V411R');
+    </script>
+    
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <img class="warning-message" src="%PUBLIC_URL%/please-rotate-your-smartphone-to-landscape-mode.png">
+  </body>
+</html>
